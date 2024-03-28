@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/app.js" defer></script>
-    <title>Calc</title>
+    <title>Calculator - A simple and fast calculator</title>
 </head>
 <body>
     <div class="container-calc">
@@ -23,24 +23,24 @@
                 <button class="numeric-button" onclick="getNumber(7)">7</button>
                 <button class="numeric-button" onclick="getNumber(8)">8</button>
                 <button class="numeric-button" onclick="getNumber(9)">9</button>
-                <button  onclick="getSignal('*')">X</button>
+                <button onclick="getSignal('*')">X</button>
             </div>
             <div class="btn">
                 <button class="numeric-button" onclick="getNumber(4)">4</button>
                 <button class="numeric-button" onclick="getNumber(5)">5</button>
                 <button class="numeric-button" onclick="getNumber(6)">6</button>
-                <button>-</button>
+                <button onclick="getSignal('-')">-</button>
             </div>
             <div class="btn">
                 <button class="numeric-button" onclick="getNumber(1)">1</button>
                 <button class="numeric-button" onclick="getNumber(2)">2</button>
                 <button class="numeric-button" onclick="getNumber(3)">3</button>
-                <button>+</button>
+                <button onclick="getSignal('+')">+</button>
             </div>
             <div class="btn">
-                <button id="specialbtn">0</button>
+                <button id="specialbtn" onclick="getNumber(0)">0</button>
                 <button>,</button>
-                <button id="equalbtn">=</button>
+                <button id="equalbtn" onclick="setResult()">=</button>
             </div>
         </div>
     </div>
